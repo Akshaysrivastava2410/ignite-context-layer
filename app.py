@@ -96,12 +96,16 @@ def api_research():
 
 @app.route("/api/build-contexts", methods=["POST"])
 def api_build_contexts():
-    with open("data/real_users.json") as f:
-        data = json.load(f)
-    contexts = build_all_contexts(data["users"])
-    save_all_contexts(contexts)
-    return jsonify({"built": len(contexts), "contexts": contexts})
-
+    try:
+        with open("data/real_users.json") as f:
+            data = json.load(f)
+        contexts = build_all_contexts(data["users"])
+        save_all_contexts(contexts)
+        return jsonify({"built": len(contexts), "contexts": contexts})
+    except Exception as e:
+        logger.error(f"build-contexts failed: {e}")
+        return jsonify({"error": str(e)}), 500
+    
 @app.route("/api/ask-context", methods=["POST"])
 def api_ask_context():
     data = request.get_json(force=True)
@@ -128,4 +132,5 @@ def api_match():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
