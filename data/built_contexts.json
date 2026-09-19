@@ -1,0 +1,100 @@
+[
+  {
+    "skills": [
+      "Python",
+      "FastAPI",
+      "Redis",
+      "Node.js",
+      "OAuth2",
+      "JWT"
+    ],
+    "strengths": "Aarav excels at architecting high\u2011throughput backend services that reliably handle massive concurrent workloads and secure authentication flows.",
+    "project_summary": "He consistently builds robust, scalable backend infrastructure for real\u2011time applications, focusing on job queue management and auth microservices.",
+    "collaboration_style": "team leader",
+    "standout_trait": "Designing high\u2011concurrency systems with Redis that sustain tens of thousands of simultaneous requests.",
+    "experience_level": "intermediate",
+    "user_id": "u1",
+    "name": "Aarav Mehta"
+  },
+  {
+    "skills": [
+      "React",
+      "D3.js",
+      "UI/UX design",
+      "Data visualization",
+      "API integration"
+    ],
+    "strengths": "Excels at rapid prototyping and translating complex data into clean, intuitive visual interfaces, especially under tight hackathon timelines.",
+    "project_summary": "Priya consistently delivers polished, user\u2011centric front\u2011end solutions\u2014from real\u2011time analytics dashboards to AI\u2011driven design tools\u2014within the fast\u2011paced hackathon environment.",
+    "collaboration_style": "solo builder",
+    "standout_trait": "An exceptional eye for clean, aesthetically pleasing UI that makes data instantly understandable.",
+    "experience_level": "intermediate",
+    "user_id": "u2",
+    "name": "Priya Sharma"
+  },
+  {
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Convolutional Neural Networks (CNN)",
+      "Computer Vision",
+      "Image Preprocessing"
+    ],
+    "strengths": "Rohan excels at designing and training effective deep learning models for visual tasks, turning raw image data into actionable insights.",
+    "project_summary": "He builds practical AI solutions for agriculture, exemplified by a crop disease detector that achieves high accuracy with a focused CNN pipeline.",
+    "collaboration_style": "team contributor",
+    "standout_trait": "Rapidly prototypes high\u2011performing computer\u2011vision models for real\u2011world problems.",
+    "experience_level": "intermediate",
+    "user_id": "u3",
+    "name": "Rohan Gupta"
+  },
+  {
+    "skills": [
+      "Django",
+      "Flask",
+      "React",
+      "Node.js",
+      "Razorpay API integration",
+      "Groq LLM integration"
+    ],
+    "strengths": "Sneha excels at turning fintech ideas into full\u2011stack products, seamlessly coupling backend logic with polished front\u2011end experiences and integrating third\u2011party and AI services.",
+    "project_summary": "She has delivered a suite of finance\u2011focused tools\u2014from a UPI\u2011enabled expense splitter to an AI\u2011driven invoicing engine and a personal budgeting app\u2014showcasing end\u2011to\u2011end full\u2011stack expertise.",
+    "collaboration_style": "team leader",
+    "standout_trait": "Rapidly prototypes sophisticated fintech solutions that blend traditional APIs with cutting\u2011edge AI.",
+    "experience_level": "advanced",
+    "user_id": "u4",
+    "name": "Sneha Reddy"
+  },
+  {
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Git",
+      "Responsive UI design"
+    ],
+    "strengths": "Shows fast learning ability and can translate simple ideas into working front\u2011end prototypes.",
+    "project_summary": "Delivered a functional to\u2011do web app as his first hackathon project, demonstrating core front\u2011end development skills.",
+    "collaboration_style": "solo builder",
+    "standout_trait": "Started coding only six months ago yet already shipped a hackathon\u2011ready web app.",
+    "experience_level": "beginner",
+    "user_id": "u5",
+    "name": "Karan Verma"
+  },
+  {
+    "skills": [
+      "JavaScript",
+      "Rust",
+      "WebAssembly",
+      "Machine Learning with scikit-learn",
+      "Secure cryptographic protocol design"
+    ],
+    "strengths": "Ananya excels at turning complex security concepts into usable tools, seamlessly blending machine\u2011learning detection with strong cryptographic safeguards.",
+    "project_summary": "She builds end\u2011to\u2011end security solutions, from a phishing\u2011detecting browser extension to a zero\u2011knowledge password manager, demonstrating depth across both front\u2011end and low\u2011level systems.",
+    "collaboration_style": "team leader",
+    "standout_trait": "Combines machine learning and cryptography to deliver practical, high\u2011impact security products.",
+    "experience_level": "advanced",
+    "user_id": "u6",
+    "name": "Ananya Iyer"
+  }
+]

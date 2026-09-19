@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ignite Cockpit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-left">
+    <span class="mark">IGNITE</span><span class="mark-sub">COCKPIT</span>
+  </div>
+  <div class="top-right">solo build · groq + tavily</div>
+</header>
+
+<main class="layout">
+
+  <nav class="rail">
+    <button class="rail-btn active" data-panel="brainstorm">Brainstorm</button>
+    <button class="rail-btn" data-panel="research">Live Research</button>
+  </nav>
+
+  <section id="panel-brainstorm" class="panel active">
+    <div class="panel-head">
+      <h1>Drop the problem statement.</h1>
+      <p>Three models think in parallel. You pick, you build.</p>
+    </div>
+
+    <form id="brainstorm-form" class="input-row">
+      <textarea id="problem-input" placeholder="Paste the problem statement here the moment you get it..." rows="3"></textarea>
+      <button type="submit" id="brainstorm-btn">Generate approaches</button>
+    </form>
+
+    <div id="brainstorm-status" class="status"></div>
+    <div id="brainstorm-results" class="cards"></div>
+  </section>
+
+  <section id="panel-research" class="panel">
+    <div class="panel-head">
+      <h1>Ground it in reality.</h1>
+      <p>Tavily searches live, Groq writes the answer.</p>
+    </div>
+
+    <form id="research-form" class="input-row">
+      <input id="research-input" type="text" placeholder="Ask anything that needs current/live data..." />
+      <button type="submit" id="research-btn">Search + answer</button>
+    </form>
+
+    <div id="research-status" class="status"></div>
+    <div id="research-result" class="research-card" hidden>
+      <p id="research-answer"></p>
+      <ul id="research-points"></ul>
+      <div id="research-sources" class="sources"></div>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

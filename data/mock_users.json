@@ -1,0 +1,33 @@
+{
+  "users": [
+    {"user_id": "u1", "name": "Aarav Mehta", "bio": "CS student, likes backend systems", "github_username": "aaravm-dev",
+     "submissions": [
+       {"title": "QueueFlow", "description": "Built a Redis-based job queue for a food delivery app, handled 10k concurrent orders", "tech": ["Python", "Redis", "FastAPI"]},
+       {"title": "AuthGate", "description": "OAuth2 + JWT auth microservice, used in 2 college projects", "tech": ["Node.js", "JWT"]}
+     ], "hackathons_attended": 5, "teams_led": 2},
+    {"user_id": "u2", "name": "Priya Sharma", "bio": "Frontend dev, loves clean UI", "github_username": "priyasharma-ui",
+     "submissions": [
+       {"title": "PulseBoard", "description": "Real-time analytics dashboard, built solo in 24hrs", "tech": ["React", "D3.js"]},
+       {"title": "ColorMind", "description": "AI palette generator, won 'Best Design'", "tech": ["React", "OpenAI API"]}
+     ], "hackathons_attended": 8, "teams_led": 0},
+    {"user_id": "u3", "name": "Rohan Gupta", "bio": "ML enthusiast", "github_username": "rohang-ml",
+     "submissions": [
+       {"title": "CropSense", "description": "Crop disease detection from leaf images, 89% accuracy", "tech": ["PyTorch", "CNN"]}
+     ], "hackathons_attended": 2, "teams_led": 0},
+    {"user_id": "u4", "name": "Sneha Reddy", "bio": "Full-stack, ex-intern at fintech startup", "github_username": "snehareddy",
+     "submissions": [
+       {"title": "SplitWise Clone", "description": "Expense splitting app with UPI integration, solo", "tech": ["Django", "Razorpay API"]},
+       {"title": "InvoiceAI", "description": "Auto-generates invoices from chat using LLM parsing, led backend", "tech": ["Flask", "Groq"]},
+       {"title": "BudgetBuddy", "description": "Personal finance tracker", "tech": ["React", "Node.js"]}
+     ], "hackathons_attended": 6, "teams_led": 3},
+    {"user_id": "u5", "name": "Karan Verma", "bio": "Just started coding 6 months ago", "github_username": "karanv6",
+     "submissions": [
+       {"title": "ToDo Master", "description": "Basic to-do app, first hackathon project", "tech": ["HTML", "CSS", "JS"]}
+     ], "hackathons_attended": 1, "teams_led": 0},
+    {"user_id": "u6", "name": "Ananya Iyer", "bio": "Security-focused developer", "github_username": "ananyai-sec",
+     "submissions": [
+       {"title": "PhishGuard", "description": "Browser extension detecting phishing URLs, presented at 3 hackathons", "tech": ["JavaScript", "scikit-learn"]},
+       {"title": "VaultLock", "description": "Zero-knowledge password manager prototype", "tech": ["Rust", "WASM"]}
+     ], "hackathons_attended": 4, "teams_led": 1}
+  ]
+}
