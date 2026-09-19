@@ -2,99 +2,248 @@
   {
     "skills": [
       "Python",
-      "FastAPI",
-      "Redis",
+      "JavaScript",
+      "Git",
+      "React",
       "Node.js",
-      "OAuth2",
-      "JWT"
+      "SQL"
     ],
-    "strengths": "Aarav excels at architecting high\u2011throughput backend services that reliably handle massive concurrent workloads and secure authentication flows.",
-    "project_summary": "He consistently builds robust, scalable backend infrastructure for real\u2011time applications, focusing on job queue management and auth microservices.",
-    "collaboration_style": "team leader",
-    "standout_trait": "Designing high\u2011concurrency systems with Redis that sustain tens of thousands of simultaneous requests.",
+    "strengths": "Ashwin consistently demonstrates a knack for turning complex problems into clean, maintainable code, especially in web development contexts.",
+    "project_summary": "He has built several personal web applications and contributed to open\u2011source projects, showcasing a blend of front\u2011end polish and back\u2011end logic.",
+    "collaboration_style": "Team contributor",
+    "standout_trait": "His relentless curiosity drives him to experiment with new frameworks and libraries.",
     "experience_level": "intermediate",
     "user_id": "u1",
-    "name": "Aarav Mehta"
+    "name": "Ashwin Gupta"
   },
   {
     "skills": [
+      "Python",
+      "JavaScript",
       "React",
-      "D3.js",
-      "UI/UX design",
-      "Data visualization",
-      "API integration"
+      "Node.js",
+      "Git"
     ],
-    "strengths": "Excels at rapid prototyping and translating complex data into clean, intuitive visual interfaces, especially under tight hackathon timelines.",
-    "project_summary": "Priya consistently delivers polished, user\u2011centric front\u2011end solutions\u2014from real\u2011time analytics dashboards to AI\u2011driven design tools\u2014within the fast\u2011paced hackathon environment.",
-    "collaboration_style": "solo builder",
-    "standout_trait": "An exceptional eye for clean, aesthetically pleasing UI that makes data instantly understandable.",
+    "strengths": "Trung consistently demonstrates a knack for turning complex requirements into clean, functional code, often picking up new frameworks with minimal guidance.",
+    "project_summary": "He has built several small to medium\u2011sized web applications, ranging from personal portfolio sites to data\u2011visualization dashboards, showcasing a solid grasp of full\u2011stack development.",
+    "collaboration_style": "Team contributor",
+    "standout_trait": "His enthusiasm for contributing to open\u2011source projects sets him apart from his peers.",
     "experience_level": "intermediate",
     "user_id": "u2",
-    "name": "Priya Sharma"
+    "name": "Trung Loc"
+  },
+  {
+    "skills": [
+      "Python",
+      "JavaScript",
+      "React",
+      "Git",
+      "HTML/CSS"
+    ],
+    "strengths": "Vansh excels at turning concepts into functional prototypes quickly, especially in web development.",
+    "project_summary": "He has built several small\u2011scale web applications and data\u2011analysis scripts, focusing on clean, user\u2011friendly interfaces.",
+    "collaboration_style": "Solo builder",
+    "standout_trait": "Consistently maintains a clean, well\u2011documented codebase across all projects.",
+    "experience_level": "intermediate",
+    "user_id": "u3",
+    "name": "Vansh"
+  },
+  {
+    "skills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Python",
+      "Git"
+    ],
+    "strengths": "Quickly prototypes full\u2011stack applications and consistently delivers clean, maintainable code.",
+    "project_summary": "Built several web apps ranging from simple utilities to real\u2011time chat platforms, and has contributed to open\u2011source projects.",
+    "collaboration_style": "Team contributor",
+    "standout_trait": "Turns concepts into working prototypes in record time.",
+    "experience_level": "intermediate",
+    "user_id": "u4",
+    "name": "Satyam IIITD"
+  },
+  {
+    "skills": [
+      "Python",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Git",
+      "SQL"
+    ],
+    "strengths": "Hiyaa consistently demonstrates the ability to rapidly prototype functional web applications, translating design concepts into clean, maintainable code.",
+    "project_summary": "Over the past year, Hiyaa has developed a handful of full\u2011stack projects\u2014ranging from a personal portfolio to a small e\u2011commerce demo\u2014showcasing a solid grasp of both front\u2011end and back\u2011end development.",
+    "collaboration_style": "Team contributor",
+    "standout_trait": "A self\u2011driven learner who frequently seeks out new challenges and quickly adapts to unfamiliar technologies.",
+    "experience_level": "intermediate",
+    "user_id": "u5",
+    "name": "Hiyaa Khanna"
+  },
+  {
+    "skills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "AWS",
+      "SQL"
+    ],
+    "strengths": "Haardik excels at translating business requirements into efficient, scalable web solutions, consistently delivering high-performance features with clean code.",
+    "project_summary": "He has contributed to the development of a high-traffic content platform at Times Network, focusing on real-time media streaming and dynamic content rendering.",
+    "collaboration_style": "team contributor",
+    "standout_trait": "He brings a unique blend of media industry insight and technical expertise, enabling rapid prototyping of media delivery features.",
+    "experience_level": "intermediate",
+    "user_id": "u6",
+    "name": "Haardik Madaan"
+  },
+  {
+    "skills": [
+      "Python",
+      "JavaScript",
+      "Git",
+      "HTML/CSS",
+      "React"
+    ],
+    "strengths": "Vivek quickly picks up new technologies and applies them in practical projects, showing a knack for turning ideas into functional prototypes.",
+    "project_summary": "He has developed several small web and backend projects, often sharing them on GitHub, and has begun contributing to open\u2011source repositories.",
+    "collaboration_style": "team contributor",
+    "standout_trait": "Vivek\u2019s enthusiasm for open\u2011source collaboration drives him to actively seek feedback and improve his code.",
+    "experience_level": "beginner",
+    "user_id": "u7",
+    "name": "Vivek Singh"
+  },
+  {
+    "skills": [
+      "JavaScript",
+      "Python",
+      "React",
+      "Node.js",
+      "Git"
+    ],
+    "strengths": "Vishal consistently demonstrates strong problem\u2011solving abilities and a knack for quickly mastering new libraries and frameworks.",
+    "project_summary": "He has built several full\u2011stack web applications, often integrating front\u2011end React components with back\u2011end Node.js APIs and deploying them to cloud platforms.",
+    "collaboration_style": "Team contributor, actively collaborating on shared codebases and participating in code reviews.",
+    "standout_trait": "He shows a genuine enthusiasm for open\u2011source contributions, frequently submitting pull requests to community projects.",
+    "experience_level": "intermediate",
+    "user_id": "u8",
+    "name": "Vishal Singh"
+  },
+  {
+    "skills": [
+      "Python",
+      "JavaScript",
+      "Git",
+      "HTML/CSS",
+      "React"
+    ],
+    "strengths": "Arham consistently turns complex problems into clean, maintainable code and quickly adapts to new technologies.",
+    "project_summary": "He has built a handful of web applications and data\u2011analysis scripts, often integrating APIs and visualizing results.",
+    "collaboration_style": "Team contributor, frequently collaborating on group projects and open\u2011source contributions.",
+    "standout_trait": "Arham\u2019s proactive approach to learning\u2014evidenced by his regular participation in hackathons and open\u2011source projects\u2014sets him apart.",
+    "experience_level": "intermediate",
+    "user_id": "u9",
+    "name": "Arham Siddiqui"
+  },
+  {
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "Product Management",
+      "Cloud Platforms (AWS/GCP)",
+      "Data Engineering",
+      "SQL"
+    ],
+    "strengths": "Manav excels at translating complex AI concepts into actionable product roadmaps, consistently aligning technical teams with business objectives.",
+    "project_summary": "At EMB Global, he has spearheaded the development of AI-driven products, overseeing end-to-end lifecycle from ideation to deployment, while ensuring scalability and user impact.",
+    "collaboration_style": "Team Leader",
+    "standout_trait": "He uniquely blends deep technical AI expertise with senior-level product strategy, driving cross-functional teams toward market-ready solutions.",
+    "experience_level": "advanced",
+    "user_id": "u10",
+    "name": "Manav Bhatia"
   },
   {
     "skills": [
       "Python",
       "PyTorch",
-      "Convolutional Neural Networks (CNN)",
-      "Computer Vision",
-      "Image Preprocessing"
+      "TensorFlow",
+      "scikit-learn",
+      "Data Visualization",
+      "SQL"
     ],
-    "strengths": "Rohan excels at designing and training effective deep learning models for visual tasks, turning raw image data into actionable insights.",
-    "project_summary": "He builds practical AI solutions for agriculture, exemplified by a crop disease detector that achieves high accuracy with a focused CNN pipeline.",
-    "collaboration_style": "team contributor",
-    "standout_trait": "Rapidly prototypes high\u2011performing computer\u2011vision models for real\u2011world problems.",
-    "experience_level": "intermediate",
-    "user_id": "u3",
-    "name": "Rohan Gupta"
+    "strengths": "Harshul excels at rapidly prototyping machine learning models and turning complex data challenges into clean, deployable solutions.",
+    "project_summary": "He has developed end\u2011to\u2011end ML pipelines for predictive analytics and natural language processing, applying state\u2011of\u2011the\u2011art techniques to real\u2011world datasets.",
+    "collaboration_style": "Team Contributor",
+    "standout_trait": "Harshul consistently transforms raw data into actionable insights through elegant, scalable machine learning solutions.",
+    "experience_level": "Intermediate",
+    "user_id": "u11",
+    "name": "Harshul Saini"
   },
   {
     "skills": [
-      "Django",
-      "Flask",
+      "Python",
+      "JavaScript",
       "React",
       "Node.js",
-      "Razorpay API integration",
-      "Groq LLM integration"
-    ],
-    "strengths": "Sneha excels at turning fintech ideas into full\u2011stack products, seamlessly coupling backend logic with polished front\u2011end experiences and integrating third\u2011party and AI services.",
-    "project_summary": "She has delivered a suite of finance\u2011focused tools\u2014from a UPI\u2011enabled expense splitter to an AI\u2011driven invoicing engine and a personal budgeting app\u2014showcasing end\u2011to\u2011end full\u2011stack expertise.",
-    "collaboration_style": "team leader",
-    "standout_trait": "Rapidly prototypes sophisticated fintech solutions that blend traditional APIs with cutting\u2011edge AI.",
-    "experience_level": "advanced",
-    "user_id": "u4",
-    "name": "Sneha Reddy"
-  },
-  {
-    "skills": [
-      "HTML",
-      "CSS",
-      "JavaScript",
       "Git",
-      "Responsive UI design"
+      "Linux"
     ],
-    "strengths": "Shows fast learning ability and can translate simple ideas into working front\u2011end prototypes.",
-    "project_summary": "Delivered a functional to\u2011do web app as his first hackathon project, demonstrating core front\u2011end development skills.",
-    "collaboration_style": "solo builder",
-    "standout_trait": "Started coding only six months ago yet already shipped a hackathon\u2011ready web app.",
-    "experience_level": "beginner",
-    "user_id": "u5",
-    "name": "Karan Verma"
+    "strengths": "Hamza consistently demonstrates a strong ability to learn new technologies quickly and apply them to solve real-world problems, especially in web development and data manipulation.",
+    "project_summary": "He builds full-stack web applications and data-driven prototypes, often integrating modern JavaScript frameworks with backend services.",
+    "collaboration_style": "Team contributor",
+    "standout_trait": "His proactive approach to self-improvement and willingness to tackle unfamiliar challenges set him apart.",
+    "experience_level": "intermediate",
+    "user_id": "u12",
+    "name": "Hamza A"
+  },
+  {
+    "skills": [
+      "Python",
+      "Java",
+      "Git",
+      "SQL",
+      "React"
+    ],
+    "strengths": "Utkarsh consistently demonstrates strong problem\u2011solving skills and a knack for turning conceptual ideas into functional prototypes.",
+    "project_summary": "He has built a handful of small\u2011to\u2011medium web and data\u2011analysis projects, often integrating front\u2011end frameworks with back\u2011end services.",
+    "collaboration_style": "Team contributor",
+    "standout_trait": "Utkarsh\u2019s rapid learning curve allows him to pick up new technologies and apply them effectively within short timeframes.",
+    "experience_level": "intermediate",
+    "user_id": "u13",
+    "name": "Utkarsh Verma"
   },
   {
     "skills": [
       "JavaScript",
-      "Rust",
-      "WebAssembly",
-      "Machine Learning with scikit-learn",
-      "Secure cryptographic protocol design"
+      "React",
+      "Node.js",
+      "Python",
+      "AWS",
+      "Docker"
     ],
-    "strengths": "Ananya excels at turning complex security concepts into usable tools, seamlessly blending machine\u2011learning detection with strong cryptographic safeguards.",
-    "project_summary": "She builds end\u2011to\u2011end security solutions, from a phishing\u2011detecting browser extension to a zero\u2011knowledge password manager, demonstrating depth across both front\u2011end and low\u2011level systems.",
-    "collaboration_style": "team leader",
-    "standout_trait": "Combines machine learning and cryptography to deliver practical, high\u2011impact security products.",
+    "strengths": "Arnav excels at rapidly prototyping concepts into functional products, leveraging full\u2011stack development to iterate quickly.",
+    "project_summary": "He has led the creation of several SaaS platforms, guiding them from ideation through launch and scaling, often using cloud infrastructure to support growth.",
+    "collaboration_style": "Team leader",
+    "standout_trait": "Founder of R2GI, he consistently demonstrates the ability to turn a vision into a market\u2011ready product within tight timelines.",
     "experience_level": "advanced",
-    "user_id": "u6",
-    "name": "Ananya Iyer"
+    "user_id": "u14",
+    "name": "Arnav Rastogi"
+  },
+  {
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Docker",
+      "Kubernetes",
+      "AWS"
+    ],
+    "strengths": "Faizan excels at turning complex business challenges into scalable AI solutions, blending deep technical expertise with a clear product vision.",
+    "project_summary": "As founder of RootTron AI, he has steered the company from concept to market, delivering AI-powered products and actively contributing to open\u2011source projects on GitHub.",
+    "collaboration_style": "Team leader",
+    "standout_trait": "Founder of an AI startup that leverages cutting\u2011edge ML to solve real\u2011world problems",
+    "experience_level": "advanced",
+    "user_id": "u15",
+    "name": "Faizan Ali"
   }
 ]

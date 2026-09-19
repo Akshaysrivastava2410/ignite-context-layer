@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "user_id": "u1",
+      "name": "Ashwin Gupta",
+      "linkedin_url": "https://linkedin.com/in/ashwin-gupta-96a144337",
+      "github_username": "https://github.com/CxashxG",
+      "company_or_college": "ADGIPS",
+      "job_title": "Student"
+    },
+    {
+      "user_id": "u2",
+      "name": "Trung Loc",
+      "linkedin_url": "https://linkedin.com/in/loc-hoang-trung-55abb4346",
+      "github_username": "https://github.com/lxc-ht",
+      "company_or_college": "Student",
+      "job_title": "Student"
+    },
+    {
+      "user_id": "u3",
+      "name": "Vansh",
+      "linkedin_url": "https://linkedin.com/in/yuvansh-arora-a58297361",
+      "github_username": "https://github.com/yuvansharora06-byte",
+      "company_or_college": "Guru Tegh Bahadur Institute Of Technology",
+      "job_title": "Student"
+    },
+    {
+      "user_id": "u4",
+      "name": "Satyam IIITD",
+      "linkedin_url": "https://linkedin.com/in/satyam564774288",
+      "github_username": "https://github.com/itzsam-lol",
+      "company_or_college": "IIIT Delhi",
+      "job_title": "Student"
+    },
+    {
+      "user_id": "u5",
+      "name": "Hiyaa Khanna",
+      "linkedin_url": "https://linkedin.com/in/hiyaa-khanna-282098307",
+      "github_username": "https://github.com/Supernova172",
+      "company_or_college": "JSS university",
+      "job_title": "Student"
+    },
+    {
+      "user_id": "u6",
+      "name": "Haardik Madaan",
+      "linkedin_url": "https://linkedin.com/in/haardik-madaan-2040ba25b",
+      "github_username": "https://github.com/Haardik-madaan",
+      "company_or_college": "Times Network",
+      "job_title": "Software engineer"
+    },
+    {
+      "user_id": "u7",
+      "name": "Vivek Singh",
+      "linkedin_url": "https://linkedin.com/in/vivek-singh-823636335",
+      "github_username": "https://github.com/vivek777-coder",
+      "company_or_college": "ABES Engineering College",
+      "job_title": "Student"
+    },
+    {
+      "user_id": "u8",
+      "name": "Vishal Singh",
+      "linkedin_url": "https://linkedin.com/in/ vishal-singh0554",
+      "github_username": "https://github.com/Vishal0554",
+      "company_or_college": "Abes engineering college",
+      "job_title": "Software developer"
+    },
+    {
+      "user_id": "u9",
+      "name": "Arham Siddiqui",
+      "linkedin_url": "https://linkedin.com/in/arham-siddiqui-485135343",
+      "github_username": "https://github.com/Arham-Siddiqui09",
+      "company_or_college": "Jamia Millia Islamia Central University New Delhi",
+      "job_title": "Student"
+    },
+    {
+      "user_id": "u10",
+      "name": "Manav Bhatia",
+      "linkedin_url": "https://linkedin.com/in/bettercallmanav",
+      "github_username": "https://github.com/bettercallmanav",
+      "company_or_college": "EMB Global",
+      "job_title": "Senior Manager - AI Product"
+    },
+    {
+      "user_id": "u11",
+      "name": "Harshul Saini",
+      "linkedin_url": "https://linkedin.com/in/harshul-saini-701057322",
+      "github_username": "https://github.com/Harshul0025",
+      "company_or_college": "BML MUNJAL UNIVERSITY",
+      "job_title": "AI And ML"
+    },
+    {
+      "user_id": "u12",
+      "name": "Hamza A",
+      "linkedin_url": "https://linkedin.com/in/hamza-ansari-1240ab2b7",
+      "github_username": "https://github.com/upskill-hamza",
+      "company_or_college": "Jamia Millia Islamia",
+      "job_title": "Student"
+    },
+    {
+      "user_id": "u13",
+      "name": "Utkarsh Verma",
+      "linkedin_url": "https://linkedin.com/in/utkarshvr",
+      "github_username": "https://github.com/Utkarshvr",
+      "company_or_college": "Shaheed Sukhdev College of Business Studies, DU",
+      "job_title": "B.Sc. Computer Science (hons)"
+    },
+    {
+      "user_id": "u14",
+      "name": "Arnav Rastogi",
+      "linkedin_url": "https://linkedin.com/in/arnav-rastogi-6b868a22a",
+      "github_username": "https://github.com/ARC345",
+      "company_or_college": "R2GI",
+      "job_title": "Founder"
+    },
+    {
+      "user_id": "u15",
+      "name": "Faizan Ali",
+      "linkedin_url": "https://linkedin.com/in/faizan-ali-1282ba2a7",
+      "github_username": "https://github.com/Incredible-Hacker",
+      "company_or_college": "RootTron AI",
+      "job_title": "Founder"
+    }
+  ]
+}

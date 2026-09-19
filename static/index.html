@@ -22,6 +22,7 @@
   <nav class="rail">
     <button class="rail-btn active" data-panel="brainstorm">Brainstorm</button>
     <button class="rail-btn" data-panel="research">Live Research</button>
+    <button class="rail-btn" data-panel="context">Context Agent</button>
   </nav>
 
   <section id="panel-brainstorm" class="panel active">
@@ -55,6 +56,35 @@
       <p id="research-answer"></p>
       <ul id="research-points"></ul>
       <div id="research-sources" class="sources"></div>
+    </div>
+  </section>
+
+  <section id="panel-context" class="panel">
+    <div class="panel-head">
+      <h1>Context Layer</h1>
+      <p>Synthesized understanding, not raw fields.</p>
+    </div>
+
+    <button id="build-contexts-btn" style="margin-bottom:20px;">Build All Contexts</button>
+    <div id="build-status" class="status"></div>
+
+    <form id="ask-form" class="input-row">
+      <input id="ask-input" type="text" placeholder="e.g. Is Arnav in our database?" />
+      <button type="submit" id="ask-btn">Ask</button>
+    </form>
+    <div id="ask-result" class="research-card" hidden>
+      <p id="ask-answer"></p>
+    </div>
+
+    <div class="panel-head" style="margin-top:36px;">
+      <h1 style="font-size:20px;">Matchmaking (bonus)</h1>
+    </div>
+    <form id="match-form" class="input-row">
+      <input id="match-input" type="text" placeholder="e.g. Need a solo developer for a fintech MVP" />
+      <button type="submit" id="match-btn">Match</button>
+    </form>
+    <div id="match-result" class="research-card" hidden>
+      <p id="match-answer" style="white-space: pre-wrap;"></p>
     </div>
   </section>
 

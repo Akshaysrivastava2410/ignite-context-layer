@@ -96,7 +96,7 @@ def api_research():
 
 @app.route("/api/build-contexts", methods=["POST"])
 def api_build_contexts():
-    with open("data/mock_users.json") as f:
+    with open("data/real_users.json") as f:
         data = json.load(f)
     contexts = build_all_contexts(data["users"])
     save_all_contexts(contexts)
@@ -114,7 +114,7 @@ def api_ask_context():
 
 @app.route("/api/raw-users", methods=["GET"])
 def api_raw_users():
-    with open("data/mock_users.json") as f:
+    with open("data/real_users.json") as f:
         return jsonify(json.load(f))
 
 @app.route("/api/match", methods=["POST"])

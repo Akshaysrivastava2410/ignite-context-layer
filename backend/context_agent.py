@@ -24,16 +24,19 @@ def ask_about_users(question: str) -> str:
 
     context_block = json.dumps(contexts, indent=2)
 
-    completion = groq_client.chat.completions.create(
-        model=MODEL_STRONG,
-        temperature=0.4,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": f"User contexts:\n{context_block}\n\nOrganizer question: {question}"},
-        ],
-    )
-    return completion.choices[0].message.content
+    try:
+        completion = groq_client.chat.completions.create(
+            model=MODEL_STRONG,
+            temperature=0.4,
+            messages=[
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": f"User contexts:\n{context_block}\n\nOrganizer question: {question}"},
+            ],
+        )
+        return completion.choices[0].message.content
+    except Exception as e:
+        return "The agent is temporarily busy (rate limit) — please try again in a few seconds."
 
 
 if __name__ == "__main__":
-    print(ask_about_users("Is Shiv in our database?"))
+    print(ask_about_users("Who would be a good backend lead for a fintech project?"))

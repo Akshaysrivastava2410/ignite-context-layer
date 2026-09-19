@@ -2,25 +2,25 @@
 Context Builder: raw activity -> synthesized user understanding.
 """
 import json
+import time
 from pydantic import BaseModel, Field
-from .config import groq_client, MODEL_STRONG
+from .config import groq_client, MODEL_FAST
 
 
 class UserContext(BaseModel):
     skills: list[str] = Field(description="3-6 concrete technical skills inferred from their work")
     strengths: str = Field(description="1-2 sentences on what this person is genuinely good at, inferred not stated")
     project_summary: str = Field(description="1-2 sentence synthesis of their body of work, not a list")
-    collaboration_style: str = Field(description="solo builder / team leader / team contributor — inferred from teams_led and submission patterns")
+    collaboration_style: str = Field(description="solo builder / team leader / team contributor — inferred from available signals")
     standout_trait: str = Field(description="The single most notable thing about this person, in one sentence")
-    experience_level: str = Field(description="beginner / intermediate / advanced — inferred from submission complexity and hackathon count")
+    experience_level: str = Field(description="beginner / intermediate / advanced — inferred from available signals")
 
 
 SYSTEM_PROMPT = (
     "You build rich user context profiles for a hackathon platform's organizer tool. "
-    "Given a user's raw activity data (bio, past submissions, hackathon history), "
+    "Given a user's raw data (LinkedIn, GitHub, job title/college, submissions if any), "
     "synthesize an honest, specific understanding of who they are as a builder. "
-    "Do NOT just restate the raw data — interpret it. E.g. if someone led 3 teams "
-    "and always does backend, say they're a natural backend lead, don't just list 'backend'. "
+    "Do NOT just restate the raw data — interpret it. "
     "Respond with ONLY valid JSON matching this schema, no other text:\n{schema}"
 )
 
@@ -28,7 +28,7 @@ SYSTEM_PROMPT = (
 def build_context(user_raw: dict) -> dict:
     schema = UserContext.model_json_schema()
     completion = groq_client.chat.completions.create(
-        model=MODEL_STRONG,
+        model=MODEL_FAST,
         temperature=0.3,
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT.format(schema=json.dumps(schema))},
@@ -45,11 +45,29 @@ def build_context(user_raw: dict) -> dict:
 
 
 def build_all_contexts(users: list[dict]) -> list[dict]:
-    return [build_context(u) for u in users]
+    """Build contexts for every user. Never crashes the whole batch on one failure."""
+    contexts = []
+    for i, u in enumerate(users):
+        try:
+            contexts.append(build_context(u))
+        except Exception as e:
+            contexts.append({
+                "user_id": u.get("user_id", f"u{i}"),
+                "name": u.get("name", "Unknown"),
+                "skills": [],
+                "strengths": "Profile generation temporarily unavailable.",
+                "project_summary": "",
+                "collaboration_style": "unknown",
+                "standout_trait": "",
+                "experience_level": "unknown",
+            })
+        if i < len(users) - 1:
+            time.sleep(2)
+    return contexts
 
 
 if __name__ == "__main__":
-    with open("data/mock_users.json") as f:
+    with open("data/real_users.json") as f:
         data = json.load(f)
-    ctx = build_context(data["users"][3])
+    ctx = build_context(data["users"][0])
     print(json.dumps(ctx, indent=2))
