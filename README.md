@@ -63,3 +63,11 @@ static/                    UI (plain HTML/CSS/JS, no build step)
 
 
 ## Use Case Justification Use case: Hackathon listing platform. Context sources: platform-native (submissions, hackathons attended, teams led) + external GitHub signal, because for a dev-focused platform, code activity is the strongest external signal of skill — unlike a food-delivery app where only in-platform behavior matters.
+
+## What we built
+- Context builder: synthesizes 15 real hackathon participants' profiles from LinkedIn/GitHub/college data
+- Conversational agent: answers open-ended questions including existence checks ("Is X in our database?")
+- Bonus: matchmaking algorithm ranks best-fit users for a given opportunity
+
+## Live demo
+https://ignite-context-layer.onrender.com
