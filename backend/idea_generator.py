@@ -1,18 +1,24 @@
 """
 Drop in the problem statement on hackathon morning, get back several
-different build approaches in parallel (a few seconds, not sequential
-minutes) from different Groq models so you're not anchored to one idea.
+different build approaches from different Groq models so you're not
+anchored to one idea.
+
+Calls are staggered slightly and retried more, because Groq's free tier
+returns 429 (Too Many Requests) when all calls fire at the same instant.
 """
 import json
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pydantic import BaseModel, Field
 from .config import groq_client, MODEL_FAST, MODEL_STRONG, MODEL_ALT
 
 MODELS = [
-    ("Fast (gpt-oss-20b)", MODEL_FAST),
-    ("Strong (gpt-oss-120b)", MODEL_STRONG),
-    ("Alt (qwen3.6-27b)", MODEL_ALT),
+    (f"Fast ({MODEL_FAST})", MODEL_FAST),
+    (f"Strong ({MODEL_STRONG})", MODEL_STRONG),
+    (f"Alt ({MODEL_ALT})", MODEL_ALT),
 ]
+
+STAGGER_SECONDS = 2  # gap between starting each call
 
 
 class Approach(BaseModel):
@@ -33,11 +39,13 @@ SYSTEM_PROMPT = (
 )
 
 
-def _call_model(label: str, model_id: str, problem_statement: str) -> dict:
+def _call_model(label: str, model_id: str, problem_statement: str, delay: float) -> dict:
+    time.sleep(delay)  # stagger so we don't hit the rate limit all at once
     schema = Approach.model_json_schema()
-    completion = groq_client.chat.completions.create(
+    client = groq_client.with_options(max_retries=6)  # retry 429s more patiently
+    completion = client.chat.completions.create(
         model=model_id,
-        temperature=0.7,  # a bit of variety between models
+        temperature=0.7,
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT.format(schema=json.dumps(schema))},
             {"role": "user", "content": f"Problem statement: {problem_statement}"},
@@ -52,12 +60,12 @@ def _call_model(label: str, model_id: str, problem_statement: str) -> dict:
 
 
 def brainstorm(problem_statement: str) -> list[dict]:
-    """Fire all models in parallel, return whichever come back (fata fata)."""
+    """Fire the models with a small stagger, return whichever come back."""
     ideas = []
     with ThreadPoolExecutor(max_workers=len(MODELS)) as executor:
         futures = {
-            executor.submit(_call_model, label, model_id, problem_statement): label
-            for label, model_id in MODELS
+            executor.submit(_call_model, label, model_id, problem_statement, i * STAGGER_SECONDS): label
+            for i, (label, model_id) in enumerate(MODELS)
         }
         for future in as_completed(futures):
             label = futures[future]
